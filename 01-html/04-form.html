@@ -3,14 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 04 - Form</title>
+    <title>This is Exercise 4</title>
   </head>
   <body>
-    <main>
-      <form action="/submit">
-        <!-- Add your code here -->
-      </form>
-    </main>
+    <h1>This is Ex-4</h1>
+    <form method="post" action="/submit-form">
+      <label>
+        Name : <input type="text" name="username" placeholder="Full Name" />
+      </label>
+      <br />
+
+      <label>
+        Email : <input type="text" name="email" placeholder="name@pdx.edu" />
+      </label>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Favorite Character:</legend>
+        <label>
+          <input type="radio" name="radio" />
+          Spongebob</label
+        >
+
+        <br />
+        <label>
+          <input type="radio" name="radio" />
+          Sandy</label
+        >
+
+        <br />
+        <label>
+          <input type="radio" name="radio" />
+          Patrick</label
+        >
+
+        <br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Are you a fan of the show?</legend>
+        <label>
+          <input type="checkbox" name="checkbox" />
+          Yes, I have watched all episodes!
+        </label>
+        <br />
+
+        <label>
+          <input type="checkbox" name="checkbox" />
+          Yes, it's got the best memes.</label
+        >
+      </fieldset>
+      <br />
+
+      <input type="submit" value="Submit" />
+      <input type="Reset" value="Reset" />
+    </form>
   </body>
 </html>

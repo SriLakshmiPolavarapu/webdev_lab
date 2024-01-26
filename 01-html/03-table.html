@@ -3,22 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise 03 - Table</title>
+    <title>This is Exercise 3</title>
     <style>
       table,
-      th,
-      tr,
-      td {
-        border: 1px solid black;
+      tr > * {
+        border: 1px solid;
       }
     </style>
   </head>
   <body>
-    <main>
-      <table>
-        <!-- Add your code here -->
-      </table>
-    </main>
+    <h1>This is Exercise 3</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>SpongeBob</td>
+          <td>Squarepants</td>
+          <td>Spongebob@sponge.world</td>
+        </tr>
+
+        <tr>
+          <td>Patrick</td>
+          <td>Star</td>
+          <td>patrick@sponge.world</td>
+        </tr>
+
+        <tr>
+          <td>Sandy</td>
+          <td>Cheeks</td>
+          <td>sandy@sponge.world</td>
+        </tr>
+
+        <tr>
+          <td colspan="2" rowspan="2">Mr Karbs</td>
+          <td>mk@sponge.world</td>
+        </tr>
+
+        <tr>
+          <td>mkkarbs@sponge.world</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
