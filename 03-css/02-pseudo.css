@@ -1,4 +1,13 @@
-.container {
-  width: 600px;
+.info {
+  width: 450px;
   margin: 40px auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p::first-letter {
+  font-size: 2em;
+}
+
+p:hover {
+  background-color: lightblue;
 }

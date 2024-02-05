@@ -1,33 +1,27 @@
-:root {
-  --gold: #ffd700;
-}
-
-body {
-  color: var(--black);
-}
-
-.header,
-.section,
-.aside {
-  box-sizing: content-box;
+header,
+section,
+aside {
+  /*box-sizing: content-box;*/
+  box-sizing: border-box;
   padding: 10px;
-  border: 4px solid var(--black);
+  border: 4px solid black;
 }
 
-.header {
-  background-color: var(--blue);
+header {
+  background-color: rgb(62, 112, 206);
 }
 
-.section {
+section {
+  /*display: block;*/
+  background-color: orange;
   display: inline-block;
-  width: 75%;
-  height: 300px;
-  background-color: var(--orange);
+  width: 80%;
+  height: 200px;
 }
 
-.aside {
+aside {
+  background-color: rgb(255, 217, 0);
   float: right;
-  width: 25%;
-  height: 300px;
-  background-color: var(--gold);
+  width: 20%;
+  height: 200px;
 }

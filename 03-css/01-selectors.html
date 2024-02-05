@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise 01 - Selectors</title>
-    <link rel="stylesheet" href="../_styles/styles.css" />
-    <link rel="stylesheet" href="01-selectors.css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Lab-4</title>
+    <link href="01-selectors.css" type="text/css" rel="stylesheet" >
   </head>
   <body>
+    <h2>Attribute Selectors</h2>
+    <ol>
+      <li class="dog">dog</li>
+      <li id="cat">cat</li>
+      <li class="parrot">parrot</li>
+      <li class="donkey">donkey</li>
+      <li class="hedgedog">hedgedog</li>
+      <li class="cat dog parrot">dog, a cat and a parrot</li>
+    </ol>
+
     <section>
-      <h2>Attribute Selectors</h2>
+      <h2>Parent and Sibiling Selectors</h2>
+      <div>Shopping list for food supplies</div>
       <ol>
-        <li class="dog">dog</li>
-        <li id="cat">cat</li>
-        <li class="parrot">parrot</li>
-        <li class="donkey">donkey</li>
-        <li class="hedgehog">hedgehog</li>
-        <li class="cat dog parrot">dog, a cat, and a parrot</li>
+        <li class="eggs">eggs</li>
+        <li class="flour">flour</li>
+        <li class="milk">milk</li>
+        <li class="coffee">coffee</li>
       </ol>
-    </section>
-    <section>
-      <h2>Parent and Sibling Selectors</h2>
-      <div class="list-food">
-        <div>Shopping list for food supplies.</div>
+      <div><small>**if available, also get oatmeal</small></div>
+
+      <p>Shopping list for food supplies</p>
+      <div class="clean">
         <ol>
-          <li class="first">eggs</li>
-          <li class="second">flour</li>
-          <li>milk</li>
-          <li>coffee</li>
-        </ol>
-        <div><small>**if available, also get oatmeal</small></div>
-      </div>
-      <div class="list-cleaning">
-        <p>Shopping list for cleaning supplies.</p>
-        <ol>
-          <li>clorox wipes</li>
-          <li>gloves</li>
-          <li>masks</li>
+          <li class="clorox wipes">clorox wipes</li>
+          <li class="gloves">gloves</li>
+          <li class="masks">masks</li>
         </ol>
       </div>
     </section>

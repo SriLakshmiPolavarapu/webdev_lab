@@ -1,21 +1,22 @@
-/* CSS custom properties / CSS variables */
-
-:root {
-  --darkmagenta: #8b008b;
-  --magenta: #ff00ff;
-  --royalblue: #4169e1;
-  --teal: #008080;
-  --violet: #9400d3;
+li[class^="p"] {
+  color: rgba(4, 106, 4, 0.913);
 }
 
-/* Use attribute selectors for the first part of the exercise */
-
-li[class] {
-  color: var(--red);
+li[id="cat"] {
+  color: teal;
 }
 
-/* Use descendant, child, and sibling selectors for the second part */
+li[class*="do"] {
+  color: royalblue;
+}
+
+li[class$="og"] {
+  color: rgb(143, 14, 143);
+}
 
 section li {
-  color: var(--green);
+  color: green;
+}
+.eggs.flour {
+  color: violet;
 }

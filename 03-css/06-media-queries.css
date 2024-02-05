@@ -1,6 +1,64 @@
-@media (min-width: 1024px) {
+nav {
+  background-color: black;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0%;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 1em;
+  width: 100%;
+}
+
+nav ul li a:hover {
+  background-color: blue;
+  width: 60px;
+}
+
+.main {
+  margin-top: 60px;
+  padding: 0;
+}
+
+body {
+  background: purple;
+  color: white;
+}
+
+@media (max-width: 414px) {
+  nav ul li {
+    width: 100%;
+  }
+
+  .main {
+    margin-top: 300px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 1023px) {
   body {
-    background: var(--green);
-    color: var(--white);
+    background: green;
+    color: white;
+  }
+}
+
+@media (min-width: 1014px) {
+  body {
+    background: orange;
+    color: black;
   }
 }
