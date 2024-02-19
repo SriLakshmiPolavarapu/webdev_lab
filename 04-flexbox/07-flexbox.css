@@ -1,23 +1,64 @@
-.flex-container {
-  background-color: rgb(190, 190, 231);
+
+.item{
+    background-color: purple;
+    color: white;
+    font-size: 30px;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
 }
 
-/* Flex Container 1 */
-
-/* Flex Container 2 */
-
-/* Flex Container 3 */
-
-/* use height: 400px; on the container */
-
-/* Flex Container 4 */
-
-/* Flex Container 5 */
-
-/* Flex Container 6 */
-
-.flex-container-6 .flex-item {
-  width: 400px;
+.item{
+    text-align: center;
 }
 
-/* use height: 300px; on the container */
+.flex{
+    background-color: lightskyblue;
+    display: flex;
+}
+
+.flex1{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex2{
+    flex-flow: row-reverse wrap;
+    justify-content: end;
+}
+
+.flex3{
+    flex-flow: column-reverse wrap;
+    height: 300px;
+    align-items: flex-end;
+}
+
+.flex4{
+    flex-flow: row wrap-reverse;
+    justify-content: space-evenly;
+}
+
+
+.flex5{
+    align-items: center;
+}
+
+.flex5 .item1, .flex5 .item3, .flex5 .item6{
+    height: 200px;
+}
+.flex5 .item2, .flex5 .item8{
+    height: 350px;
+}
+.flex5 .item4, .flex5 .item5, .flex5 .item7{
+    height: 100px;
+}
+
+.flex6{
+    height: 250px;
+    flex-flow: column wrap;
+}
+
+.flex6 .item{
+    width: 100px;
+}
+
