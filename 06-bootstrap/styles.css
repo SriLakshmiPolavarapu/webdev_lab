@@ -1,3 +1,8 @@
+:root {
+  --white: #fefefe;
+  --purple: #8b008b;
+  --slateblue: #5b7c99;
+}
 h1 {
   text-align: center;
 }
@@ -16,6 +21,10 @@ form > * {
   background-color: var(--purple);
   color: var(--white);
   font-size: 1.4em;
+}
+
+.row > .col-3 {
+  background-color: var(--slateblue);
 }
 
 .box {
