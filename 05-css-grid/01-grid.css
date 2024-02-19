@@ -1,17 +1,52 @@
-.grid-container {
-  background-color: rgb(190, 190, 231);
+:root {
+    --white: #fefefe;
+    --violet: #8b008b;
+    --lightblue: #add8e6;
+  }
+
+.grid {
+  background-color: var(--lightblue);
+  display: grid;
+  gap: 10px;
 }
 
-/* Grid Container 1 */
+.grid1 {
+  grid-template-columns: 0.5fr 2fr 2fr;
+}
 
-/* Grid Container 2 */
+.grid2 {
+  height: 200px;
+  grid-template-columns: 20% 40% 20% 20%;
+  grid-template-rows: 1fr 4fr;
+}
 
-/* use height: 400px; on the container */
+.grid3 {
+  height: 400px;
+  grid-template-columns: 10% 45% 45%;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+}
 
-/* Grid Container 3 */
+.grid3 .box8 {
+  grid-column: span 2;
+}
 
-/* use height: 400px; on the container */
+.grid4 {
+  height: 400px;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(5, 1fr);
+}
 
-/* Grid Container 4 */
+.grid4 .box1 {
+  grid-row: span 2;
+}
 
-/* use height: 600px; on the container */
+.grid4 .box6 {
+  grid-column: span 2;
+}
+
+div {
+  text-align: center;
+  background-color: var(--violet);
+  color: var(--white);
+  font-size: 30px;
+}
