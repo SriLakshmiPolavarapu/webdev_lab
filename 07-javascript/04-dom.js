@@ -1,17 +1,43 @@
-// Exercise #1:
-// when the user clicks the 'copy' button, copy the user input to the output area
+//Ex-1
 
-// fetch JavaScript objects representing specific elements in the DOM
+let userInput = document.querySelector("#userInput1");
+let copy = document.querySelector("#copy");
+let output = document.querySelector("#output");
 
-// add an event listener on the target element
+//event listener
+copy.addEventListener("click", handleClick);
 
-// callback function to handle event
+//this is function callback
+function handleClick(event) {
+  console.log("click event", handleClick);
+  output.textContent = userInput.value;
+}
 
-// Exercise #2:
-// when the user enters input text, copy the user input to the output area
+//other ways
+//1.
+//document.getElementById('copy').onclick=()=>{
+//   let userInput=document.getElementById('userInput1');
+//   let output=document.getElementById('output')
+//   output.textContent = userInput.value;
+//};
 
-// fetch JavaScript objects representing specific elements in the DOM
+//2.
+//document.getElementById('copy').onclick=()=>{
+//document.getElementById('output').textContent= document.getElementById('userInput1').value;
+//};
 
-// add an event listener on the target element
+//Ex-2
+let userInput2 = document.querySelector("#userInput2");
+//add event listener
+userInput2.addEventListener("input", handleInput);
 
-// callback function to handle event
+let section = document.querySelector("#inputEventExample");
+let element = document.createElement("div");
+element.setAttribute("class", "output");
+section.append(element);
+
+//function call
+function handleInput(event) {
+  console.log(userInput2.value);
+  element.textContent = userInput2.value;
+}
